@@ -37,7 +37,7 @@ namespace AspNetCoreWithSwagger
                     {
                         Name = "Jenwit Penjamrat",
                         Email = "jenwit_penjamrat@hotmail.com"
-                    }
+                    },
                 });
             });
         }
