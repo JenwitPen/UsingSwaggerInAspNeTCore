@@ -14,22 +14,24 @@ namespace AspNetCoreWithSwagger.Controllers
     {
         // GET: api/User
         [HttpGet]
-        public IEnumerable<string> Get()
+        public User Get()
         {
-            return new string[] { "value1", "value2" };
+           
+            return new User(1, "Jhon Terry", "email@gmail.com", "0241950003");
         }
 
         // GET: api/User/5
         [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        public User Get(int id)
         {
-            return "value";
+            return new User(1, "Jhon Terry", "email@gmail.com", "0241950003");
         }
 
         // POST: api/User
         [HttpPost]
         public void Post([FromBody] User user)
         {
+
         }
 
         // PUT: api/User/5
